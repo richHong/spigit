@@ -1,12 +1,15 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngMaterial']);
 
 app.controller('listController', function($scope, dataFactory){
-  $scope.data = {text: 'Hello World'};
+
+  $scope.data = {};
+
+  //Grabs data from server
   dataFactory.getData().then(function(data){
-    console.log(data);
     $scope.data.activities = data.recentActivities;
-    console.log($scope.data)
+    console.log($scope.data);
   });
+  
 });
 
 app.factory('dataFactory', function($http){
