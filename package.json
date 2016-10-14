@@ -1,0 +1,14 @@
+{
+  "name": "spigit-coding-challenge",
+  "version": "0.0.1",
+  "description": "boiler plate for mean stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.20"
+  }
+}
