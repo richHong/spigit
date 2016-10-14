@@ -8,7 +8,6 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 app.get('/api/data', function(req,res){
-
   res.send(data);
 });
 
