@@ -2,14 +2,23 @@
 <html>
 
 <head>
-  <title>Mean Stack</title>
+  <title>Spigit Code Challenge</title>
   <link href="/styles/styles.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
 </head>
 
 <body ng-app='myApp'>
-  <div ng-controller='myCtrl'>
-    {{ data.text }}
+  <div ng-controller='listController'>
+    <ul>
+      <li ng-repeat='activity in data.activities'>
+        {{activity.author}}
+      </li>
+    </ul>
+
+
+
+
+
   </div>
 
   <script src='app.js'></script>
